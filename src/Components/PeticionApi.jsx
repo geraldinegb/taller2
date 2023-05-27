@@ -19,8 +19,8 @@ const siguiente = () =>{
 }
 
 const atrás = () =>{
-  setPaginacion(paginacion-2)
-  listadoNaves(paginacion-2)
+  setPaginacion(paginacion<=0? 0: paginacion-4)
+  traerPersonajes(paginacion<=0? 0: paginacion-4)
 }
   return (
     <div className="body">
